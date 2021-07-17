@@ -30,5 +30,5 @@ const Image = () => (
 
 const Title = () => <h1>Library MIS REST</h1>
 
-const Author = () => <h4>SAUVÉ Jean-Luc</h4>;
+const Author = () => <h4 style={}>SAUVÉ Jean-Luc</h4>;
 ReactDom.render(<TemplateList/>, document.getElementById('root'));
