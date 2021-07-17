@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+//CSS
+import './index.css';
 
 function TemplateList() {
   return (
-    <section>
+    <section className="templatelist">
       <Template />
       <Template />
       <Template />
@@ -15,7 +17,7 @@ function TemplateList() {
 
 const Template = () =>{
   return (
-  <article>
+  <article className="template">
     <Image/>
     <Title/>
     <Author/>
