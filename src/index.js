@@ -17,7 +17,10 @@ const secondBook = {
 function TemplateList() {
   return (
     <section className="templatelist">
-      <Template author={firstBook.author} title={firstBook.title} img={firstBook.img} />
+      <Template 
+        author={firstBook.author} 
+        title={firstBook.title} 
+        img={firstBook.img} />
       <Template
         author={secondBook.author}
         title={secondBook.title} 
@@ -29,21 +32,21 @@ function TemplateList() {
 
 
 
-const Template = (props) =>{
-  console.log(props);
+const Template = ({img, title, author}) =>{
+  // const {img, title, author } = props;
   return (
     <article className="template">
       <img
-        src={props.img}
+        src={img}
         width="300px"
         alt="API representation"
         className="intro__img"
       />
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
       <h4
         style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}
       >
-        {props.author}
+        {author}
       </h4>
     </article>
   );
