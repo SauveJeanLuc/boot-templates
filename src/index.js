@@ -3,32 +3,37 @@ import ReactDom from 'react-dom';
 //CSS
 import './index.css';
 //variables
-const firstBook = {
-  author: "SAUVÉ Jean-Luc",
-  title: "Library MIS REST",
-  img: "https://jooinn.com/images/library-37.jpg"
-}
+const templates = [
+  {
+    id: 1,
+    author: "SAUVÉ Jean-Luc",
+    title: "Library MIS REST",
+    img: "https://jooinn.com/images/library-37.jpg",
+  },
+  {
+    id: 2,
+    author: "SAUVÉ Jean-Luc",
+    title: "School MIS REST",
+    img: "https://static.toiimg.com/thumb/msid-81604332,width-1200,height-900,resizemode-4/.jpg",
+  },
+  {
+    id:3,
+    author: "SAUVÉ Jean-Luc",
+    title: "Attendance MIS REST",
+    img: "https://static.toiimg.com/thumb/msid-81604332,width-1200,height-900,resizemode-4/.jpg",
+  },
+];
 
-const secondBook = {
-  author: "SAUVÉ Jean-Luc",
-  title: "School MIS REST",
-  img: "https://static.toiimg.com/thumb/msid-81604332,width-1200,height-900,resizemode-4/.jpg"
-}
+
 function TemplateList() {
   return (
     <section className="templatelist">
-      <Template 
-        author={firstBook.author} 
-        title={firstBook.title} 
-        img={firstBook.img} 
-      >
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aliquam officia voluptate ullam! Repellendus iste vero, quisquam beatae repellat reiciendis!</p>
-      </Template>
-      <Template
-        author={secondBook.author}
-        title={secondBook.title} 
-        img={secondBook.img}
-      />
+        {templates.map((template)=>{
+          const {img, title, author} = template;
+          return(
+            <Template key={template.id} {...template}></Template>
+          )
+        })}
     </section>
   );
 };
@@ -52,7 +57,7 @@ const Template = (props) =>{
       >
         {author}
       </h4>
-      {props.children}
+    
     </article>
   ); 
 }
