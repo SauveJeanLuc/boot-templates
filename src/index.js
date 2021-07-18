@@ -20,7 +20,10 @@ function TemplateList() {
       <Template 
         author={firstBook.author} 
         title={firstBook.title} 
-        img={firstBook.img} />
+        img={firstBook.img} 
+      >
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aliquam officia voluptate ullam! Repellendus iste vero, quisquam beatae repellat reiciendis!</p>
+      </Template>
       <Template
         author={secondBook.author}
         title={secondBook.title} 
@@ -32,8 +35,9 @@ function TemplateList() {
 
 
 
-const Template = ({img, title, author}) =>{
-  // const {img, title, author } = props;
+const Template = (props) =>{
+  const {img, title, author } = props;
+
   return (
     <article className="template">
       <img
@@ -48,8 +52,9 @@ const Template = ({img, title, author}) =>{
       >
         {author}
       </h4>
+      {props.children}
     </article>
-  );
+  ); 
 }
 
 ReactDom.render(<TemplateList/>, document.getElementById('root'));

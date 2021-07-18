@@ -41,6 +41,10 @@ body{
     margin-top: 0.5rem;
 }
 
+.template p{
+    margin-top: 0.5rem;
+}
+
 .intro__img{
         box-shadow: var(--bs);
 }
