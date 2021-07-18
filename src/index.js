@@ -3,16 +3,16 @@ import ReactDom from "react-dom";
 //CSS
 import "./index.css";
 
-import {templates} from './templates'
-import Template from './Template'
-
+import { templates } from './templates'
+// import Template from './Template'
+import Api from './Api'
 function TemplateList() {
   return (
     <section className="templatelist">
-      {templates.map((template) => {
-        const { img, title, author } = template;
-        return <Template key={template.id} {...template}></Template>;
-      })}
+      {templates.map((template, index) => {
+        // return <Template key={template.id} {...template}></Template>;
+        return <Api key={template.id} {...template}></Api>;
+      })} 
     </section>
   );
 }
