@@ -30,19 +30,17 @@ body{
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media screen and (max-width: 600px){
-    .templatelist{
-        width: 500px;
-        max-width: 500px;
-        margin: 3rem auto;
-        display: grid;
-        gap: 2rem;
-    }
-}
+
 .template{
     background: #ffffff;
     border-radius: 1rem;
     padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .template{
+        padding: 0.4rem 0.8rem;
+    }
 }
 
 .template h1{
