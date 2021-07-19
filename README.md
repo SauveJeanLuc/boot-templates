@@ -1,5 +1,5 @@
 
-# All Start Spring Boot API Templates
+# All Star Spring Boot API Templates
 
 Open Source Simple React project to showcase and promote All-star APIs built on top of Spring-Boot.
 
