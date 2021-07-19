@@ -5,6 +5,7 @@ export const templates = [
     title: "Starting Any Project Template",
     img: "https://webinf.fr/assets/images/spring-boot.svg",
     repo: "https://github.com/veritem/springboot-template",
+    profile: "https://github.com/veritem/",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const templates = [
     title: "Speedy Creation Template",
     img: "https://jumpwork.s3.amazonaws.com/company_logos/c4b8dfa6-ddb9-4f79-b962-58e51ef89597.jpg",
     repo: "https://github.com/hmcts/spring-boot-template",
+    profile: "https://github.com/hmcts/",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const templates = [
     title: "School MIS SOAP",
     img: "https://static.toiimg.com/thumb/msid-81604332,width-1200,height-900,resizemode-4/.jpg",
     repo: "https://github.com/SauveJeanLuc/school-MIS-SOAP",
+    profile: "https://github.com/SauveJeanLuc/",
   },
   {
     id: 4,
@@ -26,5 +29,22 @@ export const templates = [
     title: "Spring Security Template",
     img: "https://static.javatpoint.com/sppages/springsecurity/images/spring-security-tutorial.png",
     repo: "https://github.com/SauveJeanLuc/spring-security-architecture",
+    profile: "https://github.com/SauveJeanLuc/",
+  },
+  {
+    id: 5,
+    author: "Saravanakumar Arunachalam",
+    title: "Video Streaming Template",
+    img: "https://www.kindpng.com/picc/m/80-808924_red-video-camera-icon-png-transparent-png.png",
+    repo: "https://github.com/saravanastar/video-streaming",
+    profile: "https://github.com/saravanastar",
+  },
+  {
+    id: 6,
+    author: "Open RCA",
+    title: "E-commerce Template",
+    img: "https://cdn.iconscout.com/icon/free/png-512/ecommerce-1742874-1479711.png",
+    repo: "https://github.com/Open-RCA/eCom-springBoot-api",
+    profile: "https://github.com/Open-RCA",
   },
 ];

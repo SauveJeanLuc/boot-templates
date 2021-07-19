@@ -1,6 +1,6 @@
 import React from "react";
 
-const Api = ({ img, title, author, repo }) => {
+const Api = ({ img, title, author, repo, profile }) => {
   return (
     <article
       className="template"
@@ -20,8 +20,9 @@ const Api = ({ img, title, author, repo }) => {
       </h1>
       <h4
         style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}
+        className="link5"
       >
-        {author}
+        <a href={profile}>{author}</a>
       </h4>
     </article>
   );

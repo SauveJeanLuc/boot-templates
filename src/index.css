@@ -91,3 +91,20 @@ body{
  	transform:translateY(0);
  	opacity:1;
 }
+
+
+/* Link Style 5 */
+.link5 a {
+	color: black;
+	background-image: linear-gradient(to bottom, transparent 65%, rgb(255, 148, 148) 0);
+    /* #fcf113 */
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	transition: background-size .4s ease;
+}
+
+.link5 a:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
