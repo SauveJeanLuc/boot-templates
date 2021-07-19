@@ -47,4 +47,47 @@ body{
 
 .intro__img{
         box-shadow: var(--bs);
+        border-radius: 10px;
+}
+
+/* Link Style 10 */
+.link10 a {
+	position:relative;
+	text-decoration: none;
+	color: gray;
+ 	transition:color .15s ease-in-out;
+}
+
+.link10 a:hover {
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.link10 a:after {
+	display:block;
+	content:"";
+	position: absolute;
+ 	right:0;
+ 	left:0;
+ 	width:100%;
+	height:3px;
+ 	opacity:0;
+	transform:translateY(-150%);
+ 	transition:transform .15s ease-in-out, opacity .15s ease-in-out;
+ 	background-color: red;
+}
+
+.link10 a.is-active,
+.link10 a:active,
+.link10 a:focus,
+.link10 a:hover {
+ 	color: red;
+}
+
+.link10 a.is-active:after,
+.link10 a:active:after,
+.link10 a:focus:after,
+.link10 a:hover:after {
+ 	transform:translateY(0);
+ 	opacity:1;
 }
