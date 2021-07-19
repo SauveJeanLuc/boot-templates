@@ -16,7 +16,7 @@ Contributions are always welcome😁!
   
 ## Demo
 
-https://springboot-templates.netlify.app/
+https://springboottemplates.vercel.app/
 
   
 ## Installation
