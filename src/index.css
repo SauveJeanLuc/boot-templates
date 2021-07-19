@@ -30,7 +30,15 @@ body{
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
+@media screen and (max-width: 600px){
+    .templatelist{
+        width: 60vw;
+        max-width: 1100px;
+        margin: 3rem auto;
+        display: grid;
+        gap: 2rem;
+    }
+}
 .template{
     background: #ffffff;
     border-radius: 1rem;
