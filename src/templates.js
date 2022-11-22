@@ -11,7 +11,7 @@ export const templates = [
     id: 2,
     author: "HM Courts and Tribunal Services",
     title: "Speedy Creation Template",
-    img: "https://jumpwork.s3.amazonaws.com/company_logos/c4b8dfa6-ddb9-4f79-b962-58e51ef89597.jpg",
+    img: "https://dwglogo.com/wp-content/uploads/2017/12/Spring_Framework_logo_01.png",
     repo: "https://github.com/hmcts/spring-boot-template",
     profile: "https://github.com/hmcts/",
   },
